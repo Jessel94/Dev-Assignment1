@@ -1,7 +1,26 @@
-﻿@{
+﻿@using System.Threading.Tasks
+@using Dev_Assignment1.Models
+@model List<Employee>
+@{
     ViewData["Title"] = "Employee info";
 }
 
 <h2>@ViewData["Title"].</h2>
 
-<p>This assignment is made for the Hogeschool Rotterdam.</p>
+<table class="hovertable">
+    <tr>
+        <th>Employee ID</th>
+        <th>BSN</th>
+        <th>Name</th>
+        <th>Surname</th>
+    </tr>
+    @foreach (var employee in Model)
+    {
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+            <td>@employee.IdEmployee</td>
+            <td>@employee.Bsn</td>
+            <td>@employee.Name</td>
+            <td>@employee.Surname</td>
+        </tr>
+    }
+</table>
