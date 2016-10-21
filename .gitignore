@@ -33,3 +33,4 @@
 /src/Dev-Assignment1/node_modules
 /.vs
 /src/Dev-Assignment1/bin/Debug/netcoreapp1.0
+/src/Dev-Assignment1/obj/Debug/netcoreapp1.0
