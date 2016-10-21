@@ -30,4 +30,6 @@
 
 # Debug files
 *.dSYM/
-*.su
+/src/Dev-Assignment1/node_modules
+/.vs
+/src/Dev-Assignment1/bin/Debug/netcoreapp1.0
