@@ -14,5 +14,7 @@ namespace Dev_Assignment1.Models
         public string Name { get; set; }
 
         public string Surname { get; set; }
+
+        public List<Adress> Adresslist { get; set; }
     }
 }

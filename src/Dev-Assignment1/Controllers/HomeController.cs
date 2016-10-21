@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Dev_Assignment1.Database;
 using Dev_Assignment1.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,26 +12,9 @@ namespace Dev_Assignment1.Controllers
             return View();
         }
 
-        public IActionResult Employee()
+        public IActionResult EmployeeList()
         {
-            var employeeList = new List<Employee>
-            {
-                new Employee
-                {
-                    IdEmployee = 1,
-                    Bsn = "1234",
-                    Name = "Henk",
-                    Surname = "Jan"
-                },
-                new Employee
-                {
-                    IdEmployee = 2,
-                    Bsn = "5678",
-                    Name = "Jaap",
-                    Surname = "Worst"
-                }
-            };
-
+            var employeeList = GetEmployee.GetEmployeeList();
 
             return View(employeeList);
         }
