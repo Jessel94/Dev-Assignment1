@@ -4,7 +4,7 @@ namespace Dev_Assignment1.Models
 {
     public class Employee
     {
-        public Employee(int idEmployee, string bsn, string name, string surname, List<Adress> adresslist, List<Position> positionList)
+        public Employee(int idEmployee, string bsn, string name, string surname, List<Adress> adresslist, List<Position> positionList, List<Degree> degreeList)
         {
             IdEmployee = idEmployee;
             Bsn = bsn;
@@ -12,6 +12,7 @@ namespace Dev_Assignment1.Models
             Surname = surname;
             Adresslist = adresslist;
             PositionList = positionList;
+            DegreeList = degreeList;
         }
 
         public int IdEmployee { get; }
@@ -25,5 +26,7 @@ namespace Dev_Assignment1.Models
         public List<Adress> Adresslist { get; }
 
         public List<Position> PositionList { get; }
+
+        public List<Degree> DegreeList { get; }
     }
 }

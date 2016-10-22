@@ -35,7 +35,26 @@ namespace Dev_Assignment1.Database
                     {
                         new Position(
                             1,
-                            "Software Engineer")
+                            "Software Engineer",
+                            "engineers all the softwares",
+                            "$12,50",
+                            1
+                        ),
+                        new Position(
+                            2,
+                            "Project lead",
+                            "Leads a team",
+                            "$22,50",
+                            2
+                        )
+                    },
+                    new List<Degree>()
+                    {
+                        new Degree(
+                            1,
+                            "Software engineering",
+                            "Hogeschool Rotterdam",
+                            "Masters")
                     }
                 ),
                 new Employee(
@@ -43,6 +62,7 @@ namespace Dev_Assignment1.Database
                     "5678",
                     "Jaap",
                     "Worst",
+                    null,
                     null,
                     null
                 )
