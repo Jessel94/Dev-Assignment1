@@ -1,20 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Dev_Assignment1.Models
 {
     public class Employee
     {
-        public int IdEmployee { get; set; }
+        public Employee(int idEmployee, string bsn, string name, string surname, List<Adress> adresslist, List<Position> positionList)
+        {
+            IdEmployee = idEmployee;
+            Bsn = bsn;
+            Name = name;
+            Surname = surname;
+            Adresslist = adresslist;
+            PositionList = positionList;
+        }
 
-        public string Bsn { get; set; }
+        public int IdEmployee { get; }
 
-        public string Name { get; set; }
+        public string Bsn { get; }
 
-        public string Surname { get; set; }
+        public string Name { get; }
 
-        public List<Adress> Adresslist { get; set; }
+        public string Surname { get; }
+
+        public List<Adress> Adresslist { get; }
+
+        public List<Position> PositionList { get; }
     }
 }

@@ -1,21 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Dev_Assignment1.Models
+﻿namespace Dev_Assignment1.Models
 {
     public class Adress
     {
-        public string Country { get; set; }
+        public Adress(int idAdress, string country, string city, string street, string houseNumber, string postalCode)
+        {
+            IdAdress = idAdress;
+            Country = country;
+            City = city;
+            Street = street;
+            HouseNumber = houseNumber;
+            PostalCode = postalCode;
+        }
 
-        public string City { get; set; }
+        public int IdAdress { get; }
 
-        public string Street { get; set; }
+        public string Country { get; }
 
-        public string HouseNumber { get; set; }
+        public string City { get; }
 
-        public string PostalCode { get; set; }
-        
+        public string Street { get; }
+
+        public string HouseNumber { get; }
+
+        public string PostalCode { get; }
     }
 }

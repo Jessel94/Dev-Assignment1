@@ -9,39 +9,43 @@ namespace Dev_Assignment1.Database
         {
             var employeeList = new List<Employee>
             {
-                new Employee
-                {
-                    IdEmployee = 1,
-                    Bsn = "1234",
-                    Name = "Henk",
-                    Surname = "Jan",
-                    Adresslist = new List<Adress>
+                new Employee(
+                    1,
+                    "1234",
+                    "Henk",
+                    "Jan",
+                    new List<Adress>
                     {
-                        new Adress
-                        {
-                            Country = "Netherlands",
-                            City = "Schiedam",
-                            HouseNumber = "11a",
-                            PostalCode = "3124XJ",
-                            Street = "Akkers"
-                        },
-                        new Adress
-                        {
-                            Country = "England",
-                            City = "London",
-                            HouseNumber = "321",
-                            PostalCode = "postalcode",
-                            Street = "londonstreet"
-                        }
+                        new Adress(
+                            1,
+                            "Netherlands",
+                            "Schiedam",
+                            "11a",
+                            "3124XJ",
+                            "Akkers"),
+                        new Adress(
+                            2,
+                            "England",
+                            "London",
+                            "321",
+                            "postalcode",
+                            "londonstreet")
+                    },
+                    new List<Position>
+                    {
+                        new Position(
+                            1,
+                            "Software Engineer")
                     }
-                },
-                new Employee
-                {
-                    IdEmployee = 2,
-                    Bsn = "5678",
-                    Name = "Jaap",
-                    Surname = "Worst"
-                }
+                ),
+                new Employee(
+                    2,
+                    "5678",
+                    "Jaap",
+                    "Worst",
+                    null,
+                    null
+                )
             };
             return employeeList;
         }
