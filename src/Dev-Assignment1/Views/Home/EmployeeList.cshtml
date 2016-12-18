@@ -16,7 +16,9 @@
     </tr>
     @foreach (var employee in Model)
     {
-        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" 
+            onmouseout="this.style.backgroundColor='#d4e3e5';" 
+            onclick="location.href = '@(Url.Action("Employee", "Home", new { userId = employee.IdEmployee }))'">
             <td>@employee.IdEmployee</td>
             <td>@employee.Bsn</td>
             <td>@employee.Name</td>

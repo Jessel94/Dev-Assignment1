@@ -54,6 +54,11 @@ namespace Dev_Assignment1.Database
                             1,
                             "Software engineering",
                             "Hogeschool Rotterdam",
+                            "Masters"),
+                        new Degree(
+                            1,
+                            "Software engineering",
+                            "Hogeschool Rotterdam",
                             "Masters")
                     }
                 ),
@@ -68,6 +73,62 @@ namespace Dev_Assignment1.Database
                 )
             };
             return employeeList;
+        }
+
+        public static Employee GetEmployeeInfo(int id)
+        {
+            return new Employee(
+                1,
+                "1234",
+                "Henk",
+                "Jan",
+                new List<Adress>
+                {
+                    new Adress(
+                        1,
+                        "Netherlands",
+                        "Schiedam",
+                        "11a",
+                        "3124XJ",
+                        "Akkers"),
+                    new Adress(
+                        2,
+                        "England",
+                        "London",
+                        "321",
+                        "postalcode",
+                        "londonstreet")
+                },
+                new List<Position>
+                {
+                    new Position(
+                        1,
+                        "Software Engineer",
+                        "engineers all the softwares",
+                        "$12,50",
+                        1
+                    ),
+                    new Position(
+                        2,
+                        "Project lead",
+                        "Leads a team",
+                        "$22,50",
+                        2
+                    )
+                },
+                new List<Degree>()
+                {
+                    new Degree(
+                        1,
+                        "Software engineering",
+                        "Hogeschool Rotterdam",
+                        "Masters"),
+                    new Degree(
+                        1,
+                        "Software engineering",
+                        "Hogeschool Rotterdam",
+                        "Masters")
+                });
         }
     }
 }

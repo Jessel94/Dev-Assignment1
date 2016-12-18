@@ -19,6 +19,13 @@ namespace Dev_Assignment1.Controllers
             return View(employeeList);
         }
 
+        public IActionResult Employee(int id)
+        {
+            var employeeList = GetEmployee.GetEmployeeInfo(id);
+
+            return View(employeeList);
+        }
+
         public IActionResult About()
         {
             return View();
